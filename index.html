@@ -6,58 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- styles -->
     <link rel="stylesheet" href="styles.css" >
-    <title>Tabs</title>
+    <title>Slide Show</title>
 </head>
 <body>
-    <section class="section">
-        <div class="title">
-            <h2>about</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                Eum ratione vitae sed eligendi, temporibus repudiandae dignissimos!
-            </p>
-        </div>
-        <div class="about-center section-center">
-            <article class="about-img">
-                <img src="./hero-bcg.jpeg" alt="about picture" />
-            </article>
-            <article class="about">
-                <div class="btn-container">
-                    <button class="tab-btn active" data-id="history">history</button>
-                    <button class="tab-btn" data-id="vision">vision</button>
-                    <button class="tab-btn" data-id="goals">goals</button>
-                </div>
-                <!-- tab content -->
-                <article class="about-content">
-                    <div class="content active" id="history">
-                        <h4>history</h4>
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                            Sapiente et fugit quis at corporis libero neque labore officiis impedit.
-                            Quae, ducimus. Inventore perspiciatis voluptatem quod non reiciendis dolorum ut architecto?
-                        </p>
-                    </div>
-                    <div class="content" id="vision">
-                        <h4>vision</h4>
-                        <p>
-                            Quae, ducimus. Inventore perspiciatis voluptatem quod non reiciendis dolorum ut architecto?
-                            adipisicing elit. Est, commodi labore nobis magni odit Natus provident doloribus id sit veritatis! Quasi, dolore.
-                            Inventore perspiciatis voluptatem quod non reiciendis dolorum ut architecto?
-                            Sapiente et fugit quis at corporis libero neque labore officiis impedit.
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        </p>
-                    </div>
-                    <div class="content" id="goals">
-                        <h4>goals</h4>
-                        <p>
-                            adipisicing elit. Est, commodi labore nobis magni odit Natus provident doloribus id sit veritatis! Quasi, dolore.
-                            Inventore perspiciatis voluptatem quod non reiciendis dolorum ut architecto?
-                            Sapiente et fugit quis at corporis libero neque labore officiis impedit.
-                        </p>
-                    </div>
-                </article>
-            </article>
-        </div>
-    </section>
+  <div class="slider-container">
+    <div class="slide">
+        <img src="./assets/img-1.jpeg" class="slide-img" alt="beach">
+        <h1>1</h1>
+    </div>
+    <div class="slide">
+        <img src="./assets/img-2.jpeg" class="slide-img" alt="pineapple">
+        <h1>2</h1>
+    </div>
+    <div class="slide">
+        <img src="./assets/person-1.jpeg" class="slide-img" alt="person">
+        <h1>3</h1>
+    </div>
+  </div>
+  <div class="btn-container">
+    <button type="button" class="prevBtn">
+        prev
+    </button>
+    <button type="button" class="nextBtn">
+        next
+    </button>
+  </div>
     <!-- javascript -->
     <script src="app.js"></script>
 </body>
